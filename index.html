@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lupak - Seguridad Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+     <img src="img/logo1.svg" alt="Logo1">
+      </a>
+    <h1 class="titulo-3d">¿Que Sabes de Seguridad Digital?</h1>
+    <p class="subtitulo">Proyecto:Gonzalo Tobon/Multitech/Sistemas/P53</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('fraudes')">🕵️ Tipos de Fraudes</button>
+    <button onclick="mostrarSeccion('prueba')">🧠 Ponte a Prueba</button>
+    <button onclick="mostrarSeccion('consejos')">💡 Consejos</button>
+    <button onclick="mostrarSeccion('videos')">🎥 Videos Educativos</button>
+  </nav>
+
+  <main id="contenido">
+    <section id="inicio">
+      <p>🌐 Explora y aprende cómo protegerte de las estafas digitales. 🚫</p>
+    </section>
+
+    <section id="fraudes" class="oculto">
+      <h2>🕵️‍♂️ Tipos de Fraudes Digitales</h2>
+      <ul>
+        <li>🎣 <b>Phishing:</b> correos falsos que imitan entidades reales.</li>
+        <li>📱 <b>Smishing:</b> mensajes de texto con enlaces fraudulentos.</li>
+        <li>📞 <b>Vishing:</b> llamadas telefónicas falsas para robar datos.</li>
+        <li>💬 <b>Fraudes en redes sociales:</b> cuentas o sorteos falsos.</li>
+      </ul>
+    </section>
+
+    <section id="prueba" class="oculto">
+      <h2>🧠 Ponte a Prueba</h2>
+      <div id="pregunta-container">
+        <p id="pregunta"></p>
+        <div id="opciones"></div>
+      </div>
+      <p id="resultado"></p>
+      <div id="final"></div>
+    </section>
+
+    <section id="consejos" class="oculto">
+      <h2>💡 Consejos de Seguridad</h2>
+      <ul>
+        <li>🔑 Usa contraseñas seguras y diferentes para cada cuenta.</li>
+        <li>🧩 Activa la verificación en dos pasos.</li>
+        <li>🚫 No compartas tus códigos ni contraseñas.</li>
+        <li>🔍 Verifica enlaces antes de hacer clic.</li>
+        <li>🛡️ Mantén tu software y antivirus actualizados.</li>
+      </ul>
+    </section>
+
+    <!-- 🎥 Nueva Sección de Videos Educativos -->
+    <section id="videos" class="oculto">
+      <h2>🎥 Aprende Más Sobre Seguridad Digital</h2>
+      <p>Selecciona un tema para ver un video educativo con consejos útiles y prácticos:</p>
+
+      <div class="contenedor-videos">
+        <div class="video-card">
+          <h3>🔒 ¿Qué es la Seguridad Digital?</h3>
+          <a href="https://www.youtube.com/watch?v=bN7r167crdM" target="_blank" class="btn-vermas">🎬 Ver Video en YouTube</a>
+          <p>Conoce los fundamentos de la seguridad digital y por qué es esencial proteger tus datos en el mundo actual. 🌍</p>
+          <a href="https://www.signaturit.com/es/blog/que-es-seguridad-digital/" target="_blank" class="btn-vermas">Ver más 🔗</a>
+        </div>
+
+        <div class="video-card">
+          <h3>🎣 Cómo Identificar un Phishing</h3>
+          <a href="https://www.youtube.com/watch?v=hrgPg4Y_a3c" target="_blank" class="btn-vermas">🎬 Ver Video en YouTube</a>
+          <p>Aprende a detectar correos falsos o enlaces sospechosos y evita caer en trampas digitales. 📧</p>
+          <a href="https://www.mcafee.com/blogs/es-es/internet-security/ejemplos-de-phishing-como-detectar-un-correo-de-phishing/" target="_blank" class="btn-vermas">Ver más 🔗</a>
+        </div>
+
+        <div class="video-card">
+          <h3>🔐 Consejos para Contraseñas Seguras</h3>
+            <a href="https://www.youtube.com/watch?v=jSMAN5mVn00" target="_blank" class="btn-vermas">🎬 Ver Video en YouTube</a>
+          <p>Descubre cómo crear contraseñas fuertes y seguras que mantengan tu información protegida. 🔑</p>
+          <a href="https://www.avast.com/es-es/c-strong-password-ideas" target="_blank" class="btn-vermas">Ver más 🔗</a>
+        </div>
+
+        <div class="video-card">
+          <h3>📱 Cómo proteger tus redes sociales</h3>
+            <a href="https://www.youtube.com/watch?v=gFuTGQUPfdE" target="_blank" class="btn-vermas">🎬 Ver Video en YouTube</a>
+          <p>Evita la suplantación de identidad y aprende a configurar la privacidad de tus cuentas. 🔒</p>
+          <a href="https://www.mcafee.com/blogs/es-mx/tips-tricks/10-consejos-para-protegerse-en-las-redes-sociales/" target="_blank" class="btn-vermas">Ver más 🔗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lupak - Seguridad Digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

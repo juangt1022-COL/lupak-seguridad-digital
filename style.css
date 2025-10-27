@@ -1,0 +1,289 @@
+/* 🎥 SECCIÓN DE VIDEOS EDUCATIVOS */
+.contenedor-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.video-card h3 {
+  color: var(--azul-lupak);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.video-card p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.btn-vermas {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: var(--azul-lupak);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  align-self: flex-start;
+}
+
+.btn-vermas:hover {
+  background-color: var(--rojo-lupak);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .video-card iframe {
+    height: 180px;
+  }
+}
+/* ======== VARIABLES ======== */
+:root {
+  --azul-lupak: #2c5eff;
+  --blanco: #ffffff;
+  --rojo-lupak: #ff3b30;
+  --gris-fondo: #f2f4f8;
+  --blanco-texto: #333;
+  --negro: #0f0f0f;
+  --fondo-lupak: #e8ecff; /* 👈 Nuevo color de fondo predeterminado */
+}
+
+
+/* ======== ESTILO GENERAL ======== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--fondo-lupak); /* 👈 cambia este color si quieres */
+  color: var(--gris-texto);
+  text-align: center;
+  transition: background-color 0.5s ease; /* efecto suave al cambiar fondo */
+}
+
+
+/* ======== ENCABEZADO ======== */
+header {
+  background-color: var(--azul-lupak);
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  white-space: 120px;
+  border-radius: 12px;
+}
+
+.titulo-3d {
+  font-size: 2.8rem;
+  color: #ffffff; /* 👈 cambia aquí el color del título */
+  text-shadow:
+    2px 2px 6px rgba(0,0,0,0.6),
+    4px 4px 10px rgba(44,94,255,0.4); /* efecto 3D suave */
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+.subtitulo {
+  color: var(--blanco-lupak); /* 👈 color del subtítulo */
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(255,255,255,0.6);
+}
+
+/* ======== NAVEGACIÓN ======== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+nav button {
+  background-color: var(--azul-lupak);
+  color: var(--blanco);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav button:hover {
+  background-color: var(--rojo-lupak);
+  transform: scale(1.05);
+}
+
+/* ======== SECCIONES ======== */
+section {
+  background: var(--blanco);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.oculto {
+  display: none;
+}
+
+/* ======== QUIZ ======== */
+#pregunta {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+#opciones button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  background-color: var(--azul-lupak);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 80%;
+  transition: 0.3s;
+}
+
+#opciones button:hover {
+  background-color: var(--rojo-lupak);
+  transform: scale(1.05);
+}
+
+#resultado {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+  background-color: var(--azul-lupak);
+  color: var(--blanco);
+  padding: 15px;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--rojo-lupak);
+}
+
+/* ======== ESTRELLAS ======== */
+.estrellas {
+  font-size: 2rem;
+  color: gold;
+  animation: brillar 1s ease-in-out infinite alternate;
+}
+
+@keyframes brillar {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* ======== SECCIÓN DE VIDEOS ======== */
+.contenedor-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.video-card h3 {
+  color: var(--azul-lupak);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.video-card p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.video-card iframe {
+  border-radius: 12px;
+}
+
+.btn-vermas {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: var(--azul-lupak);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  align-self: flex-start;
+}
+
+.btn-vermas:hover {
+  background-color: var(--rojo-lupak);
+  transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  nav button {
+    width: 85%;
+  }
+
+  .video-card iframe {
+    height: 180px;
+  }
+}
+
