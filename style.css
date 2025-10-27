@@ -287,3 +287,49 @@ footer {
   }
 }
 
+/* ======== LOGO RESPONSIVE ======== */
+.logo {
+  width: 160px;          /* tamaño base en escritorio */
+  height: auto;          /* mantiene proporción */
+  max-width: 100%;       /* evita que se desborde */
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* efecto pequeño al pasar el mouse */
+}
+
+/* ======== AJUSTE EN PANTALLAS PEQUEÑAS ======== */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px; /* reduce tamaño en tablet/móvil */
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .titulo-3d {
+    font-size: 1.5rem; /* ajusta el título para móviles */
+  }
+
+  .subtitulo {
+    font-size: 0.9rem; /* subtítulo más pequeño */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 90px; /* aún más pequeño en teléfonos pequeños */
+  }
+
+  .titulo-3d {
+    font-size: 1.3rem;
+  }
+
+  .subtitulo {
+    font-size: 0.8rem;
+  }
+}
+
